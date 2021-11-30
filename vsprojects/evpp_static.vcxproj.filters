@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{f9d73a37-b12d-46b6-8a4e-1f9d16244372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{6a3674b3-8f58-4e8a-bd3d-ae959d12e004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c031ed3e-d888-48b3-a292-5bbf225e9ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network">
+      <UniqueIdentifier>{941abd00-fb61-4dc4-8b29-7270ab99c646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\tcp">
+      <UniqueIdentifier>{10390af5-93da-4908-8fdd-2ef95db2522e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\tcp\server">
+      <UniqueIdentifier>{4db96656-a172-4361-8047-858ed76671ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\tcp\client">
+      <UniqueIdentifier>{3e300da2-c810-4db3-9125-41b2b35afede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\network">
+      <UniqueIdentifier>{ca042848-90a4-4154-b34b-80a9b4e78135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\network\tcp">
+      <UniqueIdentifier>{42ea35fc-68ed-4b4f-9ec9-2711e78509ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\network\tcp\server">
+      <UniqueIdentifier>{6159406d-be91-4888-84f2-c8fa812bb5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\network\tcp\client">
+      <UniqueIdentifier>{00433c6f-5b8d-4327-9725-76178e49f20f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{e1c62243-7d06-456e-b607-ec155b391211}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\logging.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_loop_impl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_loop_thread_pool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_plexing.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_queue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_status.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_loop_thread.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_loop.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_poll.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_socket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_struct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_timer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_watcher.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_arch.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_byteswap.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_callback.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_untlity.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_deps.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_duration.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_explicit.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_export.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_platform.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_stdint.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\event_utils.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\tcp_message.h">
+      <Filter>include\network\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\tcp_session.h">
+      <Filter>include\network\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\server\tcp_listen_pool.h">
+      <Filter>include\network\tcp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\server\tcp_server.h">
+      <Filter>include\network\tcp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\server\tcp_server_service.h">
+      <Filter>include\network\tcp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\server\tcp_listen.h">
+      <Filter>include\network\tcp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\client\tcp_client_ex.h">
+      <Filter>include\network\tcp\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\client\tcp_connect.h">
+      <Filter>include\network\tcp\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\client\tcp_connect_basic.h">
+      <Filter>include\network\tcp\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\client\tcp_client.h">
+      <Filter>include\network\tcp\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\network\tcp\client\tcp_client_service.h">
+      <Filter>include\network\tcp\client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\event_buffer.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_loop_impl.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_loop_thread_pool.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_queue.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_status.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_loop_thread.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_loop.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_poll.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_socket.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_timer.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event_watcher.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_session.cc">
+      <Filter>src\network\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_message.cc">
+      <Filter>src\network\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_listen.cc">
+      <Filter>src\network\tcp\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_server.cc">
+      <Filter>src\network\tcp\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_client.cc">
+      <Filter>src\network\tcp\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_client_ex.cc">
+      <Filter>src\network\tcp\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_connect_basic.cc">
+      <Filter>src\network\tcp\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_connect.cc">
+      <Filter>src\network\tcp\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_server_service.cc">
+      <Filter>src\network\tcp\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_listen_pool.cc">
+      <Filter>src\network\tcp\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_client_service.cc">
+      <Filter>src\network\tcp\client</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

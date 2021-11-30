@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{06f5eacb-30ae-43d4-97bb-eedfabe9b2ac}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\logging.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_arch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_buffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_byteswap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_callback.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_core.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_loop_impl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_loop_thread_pool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_plexing.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_queue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_status.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_loop_thread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_untlity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_request.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_request_basic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_response.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_response_basic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_response_details.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_response_details_impl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_response_info.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\http_response_perform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_client.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_client_ex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_connect_basic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_connect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_session.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_deps.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_duration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_explicit.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_export.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_family.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_loop.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_message.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_platform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_poll.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_socket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_stdint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_struct.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_timer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_watcher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_listen.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\tcp_server.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\include\event_utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_request.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_request_basic.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_response.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_response_basic.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_response_details.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_response_details_impl.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_response_info.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\curl\http_response_perform.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_buffer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_loop_impl.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_loop_thread_pool.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_queue.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_status.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_loop_thread.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_client.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_client_ex.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_connect_basic.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_connect.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_session.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_family.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_loop.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_message.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_poll.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_socket.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_timer.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\event_watcher.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_listen.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\tcp_server.cc" />
+  </ItemGroup>
+</Project>

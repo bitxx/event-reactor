@@ -98,12 +98,12 @@ namespace Evpp
 
     bool TcpClientEx::Send(u96 index, const std::string& buffer)
     {
-        return [&, this](TcpSession* session) { if (nullptr == session) { return false; } return session->Send(buffer); } (GetSession(index));
+        return [&](TcpSession* session) { if (nullptr == session) { return false; } return session->Send(buffer); } (GetSession(index));
     }
 
     bool TcpClientEx::Close(u96 index, const Handler& callback)
     {
-        return [&, this](TcpSession* session) { if (nullptr == session) { return false; }  if (session->Close(callback)) { return DeleteSession(index); } return false; } (GetSession(index));
+        return [&](TcpSession* session) { if (nullptr == session) { return false; }  if (session->Close(callback)) { return DeleteSession(index); } return false; } (GetSession(index));
     }
 
     void TcpClientEx::SetConnectCallback(const InterfaceAccepts& connect)

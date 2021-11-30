@@ -16,7 +16,7 @@ namespace Evpp
         event_basic(basic),
         tcp_client(std::make_unique<TcpClient>(basic))
     {
-        
+
     }
 
     TcpClientService::~TcpClientService()

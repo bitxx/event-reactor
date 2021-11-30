@@ -5,7 +5,6 @@ namespace Evpp
 {
     class EventLoop;
     class EventAccept;
-    class EventForward;
 
     class EventPoll : public EventLoopImpl, public EventStatus
     {

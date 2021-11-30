@@ -115,7 +115,7 @@ namespace Evpp
 
         AES_KEY context = {};
         {
-            if (0 == [](const u32 status) { return status; }(enc ? AES_set_encrypt_key(reinterpret_cast<const unsigned char *>(setrc4key), std::size(setrc4key), std::addressof(context)) : AES_set_decrypt_key(reinterpret_cast<const unsigned char *>(setrc4key), std::size(setrc4key), std::addressof(context))))
+            if (0 == [] (const u32 status) { return status; }(enc ? AES_set_encrypt_key(reinterpret_cast<const unsigned char*>(setrc4key), std::size(setrc4key), std::addressof(context)) : AES_set_decrypt_key(reinterpret_cast<const unsigned char*>(setrc4key), std::size(setrc4key), std::addressof(context))))
             {
                 unsigned char crypto[4096] = {}; unsigned char ivec[AES_BLOCK_SIZE] = {};
                 {
@@ -127,11 +127,11 @@ namespace Evpp
                     //ivec	    可读写的一块内存。长度必须是16字节。
                     //enc	    是否是加密操作。AES_ENCRYPT表示加密，AES_DECRYPT表示解密。
 
-                    AES_cbc_encrypt(reinterpret_cast<const unsigned char *>(source.data()),
+                    AES_cbc_encrypt(reinterpret_cast<const unsigned char*>(source.data()),
                                     crypto,
                                     source.size(),
                                     std::addressof(context),
-                                    reinterpret_cast<unsigned char *>(ivec),
+                                    reinterpret_cast<unsigned char*>(ivec),
                                     enc);
 
                     {
@@ -169,7 +169,7 @@ namespace Evpp
             {
                 unsigned char crypto[4096] = {}; DES_cblock cipher = { 0xFC,0xB8,0xEE,0xF4,0xE1,0xFD,0xF0,0xEA };
                 {
-                    DES_cbc_encrypt(reinterpret_cast<const unsigned char *>(source.data()),
+                    DES_cbc_encrypt(reinterpret_cast<const unsigned char*>(source.data()),
                                     crypto,
                                     source.size(),
                                     std::addressof(schedule),
@@ -177,7 +177,7 @@ namespace Evpp
                                     enc);
                 }
 
-                return [&](const u32 size)
+                return [&] (const u32 size)
                 {
                     std::string temp;
 
@@ -209,7 +209,7 @@ namespace Evpp
 
         unsigned char crypto[4096] = {};
         {
-            if (0 != [&](const i32 size)
+            if (0 != [&] (const i32 size)
                 {
                     std::string temp;
                     {
@@ -223,7 +223,7 @@ namespace Evpp
                     }
 
                     return 0 != size;
-                }(enc ? EVP_EncodeBlock(crypto, reinterpret_cast<const unsigned char *>(source.data()), static_cast<i32>(source.size())) : EVP_DecodeBlock(crypto, reinterpret_cast<const unsigned char *>(source.data()), static_cast<i32>(source.size()))))
+                }(enc ? EVP_EncodeBlock(crypto, reinterpret_cast<const unsigned char*>(source.data()), static_cast<i32>(source.size())) : EVP_DecodeBlock(crypto, reinterpret_cast<const unsigned char*>(source.data()), static_cast<i32>(source.size()))))
             {
                 return true;
             }
@@ -384,9 +384,9 @@ namespace Evpp
         return false;
     }
 
-    bool CreateCipherRsa(const std::string& key, RSA **context, const u32 overt, CertificateCipherCallback callback, void* handler)
+    bool CreateCipherRsa(const std::string& key, RSA** context, const u32 overt, CertificateCipherCallback callback, void* handler)
     {
-        return [&](BIO * bio)
+        return [&] (BIO* bio)
         {
             if (nullptr == bio)
             {
@@ -413,7 +413,7 @@ namespace Evpp
 
         RSA* context = nullptr;
         {
-            CipherStackRecovery leave([&]() { if (nullptr != context) { RSA_free(context); } });
+            CipherStackRecovery leave([&] () { if (nullptr != context) { RSA_free(context); } });
             {
                 if (CreateCipherRsa(key, std::addressof(context), method, callback, handler))
                 {
@@ -424,7 +424,7 @@ namespace Evpp
 
                     unsigned char crypto[1024] = {};
                     {
-                        return [&](const i32 size)
+                        return [&] (const i32 size)
                         {
                             if (-1 == size)
                             {
@@ -469,7 +469,7 @@ namespace Evpp
             {
                 RSA* context = nullptr;
                 {
-                    CipherStackRecovery leave([&]() { if (nullptr != context) { RSA_free(context); } });
+                    CipherStackRecovery leave([&] () { if (nullptr != context) { RSA_free(context); } });
                     {
                         if (CreateCipherRsa(key, std::addressof(context), method, callback, handler))
                         {
@@ -515,7 +515,7 @@ namespace Evpp
             {
                 RSA* context = nullptr;
                 {
-                    CipherStackRecovery leave([&]() { if (nullptr != context) { RSA_free(context); } });
+                    CipherStackRecovery leave([&] () { if (nullptr != context) { RSA_free(context); } });
                     {
                         if (CreateCipherRsa(key, std::addressof(context), method, callback, handler))
                         {

@@ -4,6 +4,7 @@
 namespace Evpp
 {
     class EventLoop;
+
     class EventTimer : public EventLoopImpl, public EventStatus, public std::enable_shared_from_this<EventTimer>
     {
     public:

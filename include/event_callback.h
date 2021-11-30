@@ -6,10 +6,7 @@
 namespace Evpp
 {
     class EventLoop;
-    class EventConn;
     class EventPoll;
-    class EventFamily;
-    class EventForward;;
     class EventTimer;
     class EventBuffer;
 

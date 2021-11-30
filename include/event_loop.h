@@ -4,6 +4,7 @@
 namespace Evpp
 {
     class EventQueue;
+
     class EventLoop : public EventLoopImpl, public EventStatus
     {
     public:

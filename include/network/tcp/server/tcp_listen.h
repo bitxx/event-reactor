@@ -6,8 +6,6 @@ namespace Evpp
 {
     class EventLoop;
     class EventPoll;
-    class EventAccept;
-    class EventFamily;
 
     class TcpListen : public EventLoopImpl, public EventStatus
     {

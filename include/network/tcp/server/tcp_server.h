@@ -6,11 +6,11 @@ namespace Evpp
     class EventLoop;
     class EventLoopThread;
     class EventLoopThreadPool;
-    class EventFamily;
 
     class TcpListen;
     class TcpListenPool;
     class TcpSession;
+
     class TcpServer : public EventLoopImpl, public EventStatus, public EventPlexing<TcpServer, u96>
     {
     public:

@@ -5,7 +5,6 @@
 namespace Evpp
 {
     class EventLoop;
-    class EventForward;
     class EventBuffer;
     class TcpMessage : public EventLoopImpl
     {

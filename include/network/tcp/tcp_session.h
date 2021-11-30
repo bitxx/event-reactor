@@ -5,8 +5,8 @@ namespace Evpp
 {
     class EventLoop;
     class EventTimer;
-    class EventFamily;
     class TcpMessage;
+
     class TcpSession : public EventLoopImpl, public std::enable_shared_from_this<TcpSession>
     {
     public:

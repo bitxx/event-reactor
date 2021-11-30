@@ -72,9 +72,6 @@
     <ClInclude Include="..\include\event_socket.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\event_struct.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\event_timer.h">
       <Filter>include</Filter>
     </ClInclude>

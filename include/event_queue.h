@@ -5,6 +5,7 @@ namespace Evpp
 {
     class EventLoop;
     class EventWatcher;
+
     class EventQueue : public EventStatus
     {
     public:

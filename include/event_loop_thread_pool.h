@@ -5,6 +5,7 @@ namespace Evpp
 {
     class EventLoop;
     class EventLoopThread;
+
     class EventLoopThreadPool : public EventLoopImpl, public EventPlexing<EventLoopThreadPool, u96>
     {
     public:

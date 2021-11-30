@@ -40,7 +40,6 @@
     <ClInclude Include="..\include\event_socket.h" />
     <ClInclude Include="..\include\event_status.h" />
     <ClInclude Include="..\include\event_stdint.h" />
-    <ClInclude Include="..\include\event_struct.h" />
     <ClInclude Include="..\include\event_timer.h" />
     <ClInclude Include="..\include\event_untlity.h" />
     <ClInclude Include="..\include\event_utils.h" />
